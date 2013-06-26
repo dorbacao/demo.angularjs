@@ -1,7 +1,5 @@
 function ListaComprasController($scope){
 
-	
-
 $scope.itens = [
 	{produto: 'Leite', quantidade:2, comprado:false},
 	{produto: 'Coca-Cola', quantidade:12, comprado:true}
