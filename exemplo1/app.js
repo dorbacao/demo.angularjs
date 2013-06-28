@@ -1,12 +1,12 @@
 var todo = angular.module('todo',[]).config(function($routeProvider){
 
 	$routeProvider.when('/login',{
-			templateUrl:'Login.html',
+			templateUrl:'login.html',
 			controller:'LoginController'
 	});
 
 	$routeProvider.when('/home',{
-			templateUrl:'Home.html',
+			templateUrl:'home.html',
 			controller:'HomeController'
 	});
 
@@ -48,6 +48,7 @@ todo.controller('HomeController', function($scope, $location){
 		$scope.tarefas.splice($index, 1 );
 	};
 });
+
 
 
 

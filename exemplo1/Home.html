@@ -13,7 +13,7 @@ Exemplo:tarefa <strong>{{tarefa.nome}}</strong> deve estar finalizada em <strong
 
 <input type="text" ng-model="filtroPeloNome">
 <ul>
-	<li ng-repeat="tarefa in tarefas | filter:filtroPeloNome">
-		tarefa <strong>{{tarefa.nome}}</strong> deve estar finalizada em <strong>{{tarefa.data}}</strong> - <button ng-click="excluir($index)">Excluir</button>
+	<li ng-repeat="item in tarefas | filter:filtroPeloNome">
+		tarefa <strong>{{item.nome}}</strong> deve estar finalizada em <strong>{{item.data}}</strong> - <button ng-click="excluir($index)">Excluir</button>
 	</li>
 </ul>
